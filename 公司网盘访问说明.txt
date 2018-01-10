@@ -1,0 +1,17 @@
+【访问网站】
+内网访问：http://hz.backustech.com。我们的开发环境一般配置为http://xxx.hz.backustech.com
+由于电信禁用了80端口，在外网访问时需要使用81端口：http://hz.backustech.com:81/
+
+【访问数据盘】
+内网访问：
+	Windows下：在『我的电脑』地址栏里输入\\hz.backustech.com\work，输入用户名、密码即可。如果报错，在cmd里运行命令：net use * /del /y ，然后再访问。
+
+	Mac下：在safari里输入：smb://hz.backustech.com:140/，然后选导入work即可
+
+外网访问：
+	Windows下：使用ftp://hz.backustech.com
+	
+	Mac下与内网一致
+
+【访问数据库】
+由于电信禁用了3306端口，内外网统一配置成3307端口，免得内外切换改配置
