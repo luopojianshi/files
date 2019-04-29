@@ -1,0 +1,16 @@
+ie8 浏览器兼容问题
+
+jquery 2.0 之后不再支持 ie6/7/8
+引入 juqery 最新版本
+同时, 针对 ie8, 使用 <!--[if lt IE 9]><![endif]--> 或 
+<!--[if elt IE 8]><![endif]--> 引入 jquery 1.x 版本
+
+bootstrap 3.0 之后不再支持 ie6/7/8
+引入 bootstrap 3.x 版本
+同时, 针对 ie8, 使用 <!--[if lt IE 9]><![endif]--> 或 
+<!--[if elt IE 8]><![endif]--> 引入 html5shiv.min.js 和 respond.min.js
+
+Respond.js 是一个快速、轻量的 polyfill，用于为 IE6-8 以及其它不支持 CSS3 Media Queries 的浏览器提供媒体查询的 min-width 和 max-width 特性，实现响应式网页设计（Responsive Web Design）
+
+html5shiv 是一个针对 IE 浏览器的 HTML5 JavaScript 补丁，目的是让 IE 识别并支持 HTML5 元素。ie6~9、safari4.x（iphone 3.x）、firefox3.x
+
