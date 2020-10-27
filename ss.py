@@ -25,6 +25,8 @@ configs_ss = []
 configs_ssr = []
 for tbody in soup.find_all(name='tbody'):
     for tr in tbody.find_all(name='tr'):
+        if(len(tr.find_all(name='td')) == 0):
+            continue
         list.append([])
         for td in tr.find_all(name='td'):
             if td.string:
